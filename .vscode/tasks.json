@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Serve Jekyll Site",
+			"type": "shell",
+			"command": "source /usr/local/share/chruby/chruby.sh && chruby $(cat .ruby-version) && bundle exec jekyll serve --host 0.0.0.0",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build Jekyll Site",
+			"type": "shell",
+			"command": "source /usr/local/share/chruby/chruby.sh && chruby $(cat .ruby-version) && bundle exec jekyll build",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Install Dependencies",
+			"type": "shell",
+			"command": "source /usr/local/share/chruby/chruby.sh && chruby $(cat .ruby-version) && bundle install",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

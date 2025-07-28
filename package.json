@@ -1,0 +1,17 @@
+{
+  "name": "adamcarlile-com",
+  "version": "1.0.0",
+  "description": "Adam Carlile's personal website",
+  "scripts": {
+    "build-css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch",
+    "build": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.0.6",
+    "@tailwindcss/typography": "^0.5.16",
+    "postcss": "^8.5.2",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^4.0.6"
+  }
+}
