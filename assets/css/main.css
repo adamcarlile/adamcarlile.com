@@ -1,11 +1,10 @@
 ---
 ---
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 @import "tailwindcss";
 
 
-@layer utilities {
-	
+@theme {
+  --font-crete: "Crete Round", serif; 
+  --font-serif: "Crete Round", "Georgia", serif;
 }
-
-
-@config "../../../tailwind.config.js";

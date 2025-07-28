@@ -4,12 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    {% include hero.html title="Adam Carlile: Technical Leader" image="/assets/images/hero-background-beach.jpg" subtitle="Over fifteen years working in software development, love of distributed systems, eventual consistency and interpreted languages" %}
     {{ content }}
   </body>
 </html>
