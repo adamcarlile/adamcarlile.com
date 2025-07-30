@@ -2,7 +2,7 @@
 ---
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 @import "tailwindcss";
-
+@plugin "@tailwindcss/typography";
 
 @theme {
   --font-crete: "Crete Round", serif; 

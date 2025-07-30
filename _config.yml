@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Adam Carlile: Technical Leader" # the name of your site, e.g. ACME Corp.
 
 plugins:
   - jekyll-postcss-v2
@@ -13,3 +13,37 @@ exclude:
  - package.json
  - postcss.config.js
  - tailwind.config.js
+
+navigation:
+  - title: "Home"
+    url: "/"
+    icon: "fa-solid fa-house"
+  - title: "About"
+    url: "/about/"
+    icon: "fa-solid fa-user"
+  - title: "Blog"
+    url: "/blog/"
+    icon: "fa-solid fa-blog"
+  - title: "Contact"
+    url: "/contact/"
+    icon: "fa-solid fa-envelope"
+
+social_links:
+  - platform: "GitHub"
+    url: "https://github.com/adamcarlile"
+    icon: "fa-brands fa-github"
+    external: true
+    title: "Visit my GitHub profile"
+    bg_class: "bg-gray-700 hover:bg-gray-600"
+  - platform: "LinkedIn"
+    url: "https://www.linkedin.com/in/adam-carlile-191a4215/"
+    icon: "fa-brands fa-linkedin"
+    external: true
+    title: "Visit my LinkedIn profile"
+    bg_class: "bg-blue-600 hover:bg-blue-500"
+  - platform: "X"
+    url: "https://x.com/adamcarlile"
+    icon: "fa-brands fa-x-twitter"
+    external: true
+    title: "Visit my X profile"
+    bg_class: "bg-gray-800 hover:bg-gray-700"
