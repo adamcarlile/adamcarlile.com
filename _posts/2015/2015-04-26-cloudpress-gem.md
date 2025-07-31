@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cloudpress, now a Rails Engine.
-publish_date: 26/04/2015 10:30AM
+category: Software
 tags:
 - Ruby
 - Rails

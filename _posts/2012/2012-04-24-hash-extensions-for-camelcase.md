@@ -1,6 +1,7 @@
 ---
+layout: post
 title: Hash extensions for dealing with CamelCase XML documents
-publish_date: 24/04/2012 19:58PM
+category: Software
 ---
 I'm looking at you Microsoft web services!
 

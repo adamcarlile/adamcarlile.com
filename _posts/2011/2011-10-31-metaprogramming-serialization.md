@@ -1,16 +1,14 @@
 ---
+layout: post
 title: Meta programming, serialization
-publish_date: 31/10/2011 13:08PM
+category: Software
 tags:
 - Ruby
 - Rails
 - Web
 - Programming
 ---
-Oh wow, has it been that long already, I need to force myself to post
-something at least once a week, even if it's just posting pictures of cats!
-
-So I'm currently working on a social media platform for London, with it's main
+I'm currently working on a social media platform for London, with it's main
 purpose being to promote a wellbeing lifestyle in a hectic city. I wrote this
 handy little utility module for creating methods from serialized data.
 

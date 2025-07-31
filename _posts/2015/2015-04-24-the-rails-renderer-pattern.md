@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Rails renderer pattern
-publish_date: 24/04/2015 10:30AM
+category: Software
 tags:
 - Ruby
 - Ruby on rails

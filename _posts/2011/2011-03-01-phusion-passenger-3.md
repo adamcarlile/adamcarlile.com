@@ -1,13 +1,14 @@
 ---
+layout: post
 title: Phusion Passenger 3
-publish_date: 01/03/2011 17:43PM
+category: Software
 tags:
-- Ruby
-- Rails
-- Ruby on Rails
-- Passenger
-- Code
-- Programming
+  - Ruby
+  - Rails
+  - Ruby on Rails
+  - Passenger
+  - Code
+  - Programming
 ---
 I have recently upgraded my slicehost box to Ubuntu 10.04 LTS, and upgraded
 the Passenger version to 3, the difference in performance is incredible, at

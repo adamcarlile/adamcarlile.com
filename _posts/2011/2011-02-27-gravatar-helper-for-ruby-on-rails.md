@@ -1,13 +1,13 @@
 ---
+layout: post
 title: Gravatar helper for Ruby on Rails
-publish_date: 27/02/2011 10:00AM
+category: Software
 tags:
-- Ruby
-- Rails
-- Gravatar
-- Programming
+  - Ruby
+  - Rails
+  - Gravatar
 ---
-So, I was working on a project a while ago with user comments, and wanted each
+I was working on a project a while ago with user comments, and wanted each
 person to have their own avatar, however, the Gravatar plugins that existed
 for Rails were overkill for my needs.
 

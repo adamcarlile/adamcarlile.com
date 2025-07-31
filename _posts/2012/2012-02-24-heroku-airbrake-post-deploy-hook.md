@@ -1,6 +1,7 @@
 ---
+layout: post
 title: Heroku Airbrake post deploy hook
-publish_date: 24/02/2012 12:42PM
+category: Software
 tags:
 - Airbrake
 - Rails

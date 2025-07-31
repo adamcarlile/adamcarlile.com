@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+{% include title.html title=page.title subtitle=page.subtitle %}
+
+{% assign tagged_posts = site.posts | where: "tags", page.tag %}
+
+{% if tagged_posts.size > 0 %}
+<div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+  {% for post in tagged_posts %}
+    {% include post/summary.html post=post %}
+  {% endfor %}
+</div>
+{% else %}
+<!-- Empty state when no posts with this tag exist -->
+<div class="mt-16 text-center">
+  <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+  </svg>
+  <h3 class="mt-2 text-sm font-semibold text-gray-900">No posts found</h3>
+  <p class="mt-1 text-sm text-gray-500">No blog posts with the tag "{{ page.tag }}" were found.</p>
+  <div class="mt-6">
+    <a href="/blog.html" class="inline-flex items-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+      View all posts
+    </a>
+  </div>
+</div>
+{% endif %}

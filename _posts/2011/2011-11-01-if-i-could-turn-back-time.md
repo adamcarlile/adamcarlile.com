@@ -1,6 +1,7 @@
 ---
+layout: post
 title: If I could turn back TIME
-publish_date: 01/11/2011 10:12AM
+category: Software
 ---
 Time, we can all agree, is an incredibly useful concept, unfortunately the
 recent decision to drop `<time>` from the HTML5 spec is not useful.

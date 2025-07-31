@@ -13,13 +13,10 @@
     <div class="bg-white py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl">
-          {% include title.html title=page.title subtitle=page.subtitle %}
-          <div class="mt-6 mb-12">
-            <p class="text-sm text-gray-500">Published on: {{ page.date | date: "%B %d, %Y" }}</p>
-            {% if page.author %}
-              <p class="text-sm text-gray-500">Author: {{ page.author }}</p>
-            {% endif %}
-          </div>
+          {% include title.html title=page.title subtitle=page.subtitle %}          
+          {% include post/date-category.html page=page %}
+          {% include post/tags.html tags=page.tags %}
+          
           <div class="prose prose-headings:font-serif prose-headings:text-gray-900 prose-headings:font-normal">
             {{ content }}
           </div>

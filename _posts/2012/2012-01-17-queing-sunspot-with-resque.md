@@ -1,6 +1,7 @@
 ---
+layout: post
 title: Queuing Sunspot indexing jobs with Resque
-publish_date: 17/01/2012 17:12PM
+category: Software
 tags:
 - Ruby
 - Rails

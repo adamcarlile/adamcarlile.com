@@ -1,7 +1,8 @@
 ---
+layout: post
 title: Hello service_disruption gem
-publish_date: 30/04/2012 22:12PM
 header_image: https://dl.dropboxusercontent.com/u/9038520/cloudpress/lpvTvPm.jpg
+category: Software
 tags:
 - Ruby
 - Tfl

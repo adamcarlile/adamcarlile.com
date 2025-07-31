@@ -1,6 +1,7 @@
 ---
+layout: post
 title: Rendering sane markup with Rails helpers
-publish_date: 12/03/2011 17:32PM
+category: Software
 tags:
 - Ruby
 - Ruby on rails

@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Own the Network Edge
+category: Architecture
 tags:
 - Intrastructure
 - Devops
+- Routing
 ---
 It's 5:30PM, the phone rings with a last minute request to repoint a domain somwhere. "Uhh, sorry, that's going to take at least 24hrs from the minute I change the record, but the domains team have already gone home for the day, and I don't have access".
 
