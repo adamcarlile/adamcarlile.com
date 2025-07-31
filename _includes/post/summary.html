@@ -6,7 +6,7 @@
     {% endif %}
     {% if include.post.tags.size > 0 %}
       {% for tag in include.post.tags limit:5 %}
-      <a href="/blog/tags/{{ tag | slugify }}" class="relative z-10 rounded-full bg-blue-50 px-2 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
+      <a href="{{ '/blog/tags/' | append: tag | slugify | relative_url }}" class="relative z-10 rounded-full bg-blue-50 px-2 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
       {% endfor %}
     {% endif %}
   </div>
