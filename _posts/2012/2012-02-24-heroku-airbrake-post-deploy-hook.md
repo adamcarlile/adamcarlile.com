@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Heroku Airbrake post deploy hook
 category: Software
 tags:

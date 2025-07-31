@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Hash extensions for dealing with CamelCase XML documents
 category: Software
 ---

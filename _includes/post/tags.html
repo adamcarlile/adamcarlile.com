@@ -1,7 +1,7 @@
 <div class="flex items-center gap-x-4 text-xs mt-2 mb-8">
 {% if include.tags.size > 0 %}
   {% for tag in include.tags %}
-  <a href="/tags/{{ tag | slugify }}" class="relative z-10 rounded-full bg-blue-50 px-2 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
+  <a href="/blog/tags/{{ tag | slugify }}" class="relative z-10 rounded-full bg-blue-50 px-2 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
   {% endfor %}
 {% endif %}
 </div>

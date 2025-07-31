@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Meta programming, serialization
 category: Software
 tags:

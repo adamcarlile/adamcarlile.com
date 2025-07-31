@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Queuing Sunspot indexing jobs with Resque
 category: Software
 tags:

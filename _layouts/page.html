@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <script src="https://kit.fontawesome.com/ba7a445de3.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    {% include page-header.html title="Blog Posts" image="/assets/images/header/m-106.jpg" subtitle="Thoughts on software engineering, architecture, and leadership." %}
-    <div class="bg-white">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl">
-          {{ content }}
-        </div>
-      </div>
+{% include layouts/head.html %}
+
+{% include page-header.html title="Blog Posts" image="/assets/images/header/m-106.jpg" subtitle="Thoughts on software engineering, architecture, and leadership." %}
+<div class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl">
+      {% include breadcrumbs.html %}
+      {{ content }}
     </div>
-    {% include footer.html %}
-  </body>
-</html>
+  </div>
+</div>
+
+{% include layouts/foot.html %}

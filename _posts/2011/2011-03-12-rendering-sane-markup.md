@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Rendering sane markup with Rails helpers
 category: Software
 tags:

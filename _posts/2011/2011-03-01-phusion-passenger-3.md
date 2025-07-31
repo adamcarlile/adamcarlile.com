@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Phusion Passenger 3
 category: Software
 tags:

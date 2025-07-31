@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Hello service_disruption gem
 header_image: https://dl.dropboxusercontent.com/u/9038520/cloudpress/lpvTvPm.jpg
 category: Software

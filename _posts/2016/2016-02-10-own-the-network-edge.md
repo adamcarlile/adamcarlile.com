@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Own the Network Edge
 category: Architecture
 tags:

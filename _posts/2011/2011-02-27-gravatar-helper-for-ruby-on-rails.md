@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: Gravatar helper for Ruby on Rails
 category: Software
 tags:

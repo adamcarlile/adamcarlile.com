@@ -9,7 +9,7 @@ tags:
 - Nginx
 - Rails
 - TLS
-layout: post
+layout: blog/post
 ---
 At Soho House we're currently running several Rails apps, with single sign on authentication powered by OAuth2, and a drop in piece of rack middleware called `bouncer` that standardizes our session management across all of our newer applications. Additionally we're also moving a lot of those apps into Docker containers for deployment on Kubernetes, meaning a web request ends up traveling up through several reverse proxy layers.
 

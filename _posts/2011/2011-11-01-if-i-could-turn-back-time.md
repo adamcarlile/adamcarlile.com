@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title: If I could turn back TIME
 category: Software
 ---

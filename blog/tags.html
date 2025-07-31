@@ -1,0 +1,22 @@
+---
+layout: page
+title: "All Tags"
+---
+{% include title.html title=page.title subtitle=page.subtitle %}
+
+
+{% assign all_tags = site.tags %}
+{% if all_tags.size > 0 %}
+<div class="mt-10 space-y-8">
+  {% for tag in all_tags %}
+  <div class="flex items-center justify-between">
+    <a href="/blog/tags/{{ tag[0] | slugify }}" class="text-lg font-semibold text-gray-900 hover:text-blue-600">
+      {{ tag[0] }}
+    </a>
+    <span class="text-gray-500 text-sm">
+      {{ tag[1].size | pluralize }}
+    </span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

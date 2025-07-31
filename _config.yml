@@ -4,6 +4,29 @@ title: "Adam Carlile: Technical Leader" # the name of your site, e.g. ACME Corp.
 
 plugins:
   - jekyll-postcss-v2
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - year
+    - tags
+    - category
+  layout: blog/archive
+  permalinks:
+    year: /blog/:year/
+    tag: /blog/tags/:name/
+    category: /blog/category/:name/
+  # permalinks:
+  #   category: /blog/category/:name/
+  #   tag: /blog/tag/:name/
+  # categories:
+  #   title: "Categories"
+  #   sort_field: "name"
+  #   sort_reverse: false
+  # tags:
+  #   title: "Tags"
+  #   sort_field: "name"
+  #   sort_reverse: false
 
 postcss:
   cache: false
@@ -13,6 +36,8 @@ exclude:
  - package.json
  - postcss.config.js
  - tailwind.config.js
+
+permalink: /blog/:year/:title:output_ext
 
 highlighter: rouge
 markdown: kramdown
@@ -28,15 +53,9 @@ navigation:
   - title: "Home"
     url: "/"
     icon: "fa-solid fa-house"
-  - title: "About"
-    url: "/about/"
-    icon: "fa-solid fa-user"
   - title: "Blog"
     url: "/blog/"
     icon: "fa-solid fa-blog"
-  - title: "Contact"
-    url: "/contact/"
-    icon: "fa-solid fa-envelope"
 
 social_links:
   - platform: "GitHub"

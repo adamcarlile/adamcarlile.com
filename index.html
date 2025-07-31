@@ -5,3 +5,62 @@ title: "Home"
 {% include hero/hero.html title="Adam Carlile: Technical Leader" 
   image="/assets/images/header/m-106.jpg" 
   subtitle="Software Engineer and Architect with fifteen years of hands-on experience building scalable, reliable, cost effective, cloud-native systems" %}
+<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-23">
+  <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    {% for post in site.posts limit:3 %}
+    <article class="flex max-w-xl flex-col items-start justify-between">
+      <div class="flex items-center gap-x-4 text-xs">
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="text-gray-500">{{ post.date | date: "%b %d, %Y" }}</time>
+        {% if post.category %}
+        <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ post.category }}</a>
+        {% endif %}
+      </div>
+      <div class="group relative grow">
+        <h3 class="mt-3 text-lg/6 font-serif font-semibold text-gray-900 group-hover:text-gray-600">
+          <a href="{{ post.url | relative_url }}">
+            <span class="absolute inset-0"></span>
+            {{ post.title | truncate: 40 }}
+          </a>
+        </h3>
+        <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-23">
+  <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    <!-- About Me Image -->
+    <div class="flex justify-center items-center">
+      <div class="relative">
+        <img class="h-64 w-64 rounded-full object-cover ring-4 ring-gray-200 shadow-lg" 
+             src="/assets/images/about/me-snowboarding.jpg" 
+             alt="Adam Carlile">
+      </div>
+    </div>
+    
+    <!-- About Me Content -->
+    <div class="lg:col-span-2 flex flex-col justify-center">
+      <h2 class="text-3xl font-serif font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+        About Me
+      </h2>
+      <div class="text-lg text-gray-600 space-y-4">
+        <p>
+          I'm a passionate software engineer and technical leader with over fifteen years of experience 
+          building scalable, cloud-native systems. I specialize in architecting solutions that are 
+          not only technically robust but also cost-effective and maintainable.
+        </p>
+        <p>
+          Throughout my career, I've led teams in delivering high-impact projects, from startups to 
+          enterprise environments. I'm particularly interested in eventual consistency, service and interface-based 
+          architecture, systems that are safe by design, and helping teams adopt modern development workflows.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring new technologies, contributing to open source 
+          projects, or sharing knowledge through technical writing and mentoring. Tinkering with new technologies 
+          or going on adventures with my two beautiufl girls, and wonderful wife.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
