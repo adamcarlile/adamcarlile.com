@@ -1,7 +1,8 @@
 <div class="flex items-center gap-x-4 text-xs mt-2 mb-8">
 {% if include.tags.size > 0 %}
   {% for tag in include.tags %}
-  <a href="{{ '/blog/tags/' | append: tag | slugify | relative_url }}" class="relative z-10 rounded-full bg-blue-50 px-2 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
+  {% assign slugged_tag = tag | slugify %}
+  <a href="{{ '/blog/tags/' | append: slugged_tag | relative_url }}" class="relative z-10 rounded-full bg-blue-50 px-2 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
   {% endfor %}
 {% endif %}
 </div>
