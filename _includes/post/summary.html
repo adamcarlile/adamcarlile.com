@@ -2,11 +2,11 @@
   <div class="flex items-center gap-x-4 text-xs">
     <time datetime="{{ post.date | date_to_xmlschema }}" class="text-gray-500">{{ include.post.date | date: "%b %d, %Y" }}</time>
     {% if include.post.category %}
-    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ include.post.category }}</a>
+    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-2 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ include.post.category }}</a>
     {% endif %}
     {% if include.post.tags.size > 0 %}
-      {% for tag in include.post.tags limit:1 %}
-      <a href="/tags/{{ tag | slugify }}" class="relative z-10 rounded-full bg-blue-50 px-3 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
+      {% for tag in include.post.tags limit:5 %}
+      <a href="/tags/{{ tag | slugify }}" class="relative z-10 rounded-full bg-blue-50 px-2 py-1.5 font-medium text-blue-600 hover:bg-blue-100 transition-colors">{{ tag }}</a>
       {% endfor %}
     {% endif %}
   </div>

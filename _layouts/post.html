@@ -10,7 +10,7 @@
   </head>
   <body>
     {% include page-header.html title="Blog Posts" image="/assets/images/header/m-106.jpg" subtitle="Thoughts on software engineering, architecture, and leadership." %}
-    <div class="bg-white py-24 sm:py-32">
+    <div class="bg-white">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl">
           {% include title.html title=page.title subtitle=page.subtitle %}          
@@ -23,5 +23,6 @@
         </div>
       </div>
     </div>
+    {% include footer.html %}
   </body>
 </html>
