@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+    <script src="https://kit.fontawesome.com/ba7a445de3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    {% include page-header.html title="Blog Posts" image="/assets/images/header/m-106.jpg" subtitle="Thoughts on software engineering, architecture, and leadership." %}
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl">
+          {% include title.html title=page.title subtitle=page.subtitle %}
+          <div class="mt-6 mb-12">
+            <p class="text-sm text-gray-500">Published on: {{ page.date | date: "%B %d, %Y" }}</p>
+            {% if page.author %}
+              <p class="text-sm text-gray-500">Author: {{ page.author }}</p>
+            {% endif %}
+          </div>
+          <div class="prose prose-headings:font-serif prose-headings:text-gray-900 prose-headings:font-normal">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

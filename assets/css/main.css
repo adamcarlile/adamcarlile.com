@@ -8,3 +8,40 @@
   --font-crete: "Crete Round", serif; 
   --font-serif: "Crete Round", "Georgia", serif;
 }
+
+@layer components {
+  .prose img {
+    @apply mx-auto block rounded-lg shadow-sm;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Class for large images that should break out */
+  .prose img.breakout {
+    @apply w-[calc(100%+200px)] max-w-[calc(100vw-2rem)];
+    @apply -ml-[100px] -mr-[100px];
+  }
+  
+  /* Consistent link styling across the site */
+  .prose a {
+    @apply text-indigo-600 decoration-indigo-600/30 underline-offset-4;
+    @apply transition-colors duration-200;
+  }
+  
+  .prose a:hover {
+    @apply decoration-indigo-600;
+  }
+  
+  /* Responsive breakpoints for breakout images */
+  @media (max-width: 768px) {
+    .prose img.breakout {
+      @apply w-[calc(100%+100px)] -ml-[50px] -mr-[50px];
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .prose img.breakout {
+      @apply w-full ml-0 mr-0;
+    }
+  }
+}

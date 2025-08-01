@@ -3,8 +3,13 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'puma'
 
-gem 'jekyll-postcss-v2'
-gem 'jekyll-archives'
+group :jekyll_plugins do
+  gem 'jekyll-archives'
+  gem 'jekyll-compose'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-postcss-v2'
+  gem 'jekyll-spaceship'
+end
 
 group :development do
   gem 'ruby-lsp'

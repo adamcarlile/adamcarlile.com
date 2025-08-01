@@ -5,6 +5,8 @@ title: "Adam Carlile: Technical Leader" # the name of your site, e.g. ACME Corp.
 plugins:
   - jekyll-postcss-v2
   - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-spaceship
 
 jekyll-archives:
   enabled:
@@ -16,17 +18,6 @@ jekyll-archives:
     year: /blog/:year/
     tag: /blog/tags/:name/
     category: /blog/category/:name/
-  # permalinks:
-  #   category: /blog/category/:name/
-  #   tag: /blog/tag/:name/
-  # categories:
-  #   title: "Categories"
-  #   sort_field: "name"
-  #   sort_reverse: false
-  # tags:
-  #   title: "Tags"
-  #   sort_field: "name"
-  #   sort_reverse: false
 
 postcss:
   cache: false

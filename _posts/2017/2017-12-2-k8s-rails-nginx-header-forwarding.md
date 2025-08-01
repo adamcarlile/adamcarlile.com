@@ -31,20 +31,17 @@ The url builder grabs the scheme from the `X-Forwarded-Proto` header, which in o
 
 The route the request ended up taking into the cluster was as follows:
 
-```
-                            Internet
-                                |
-                                v
-                        AWS L7 Load Balancer
-                                |
-                                v
-                        K8S Ingress Controller
-                                |
-                                v
-                          K8S Endpoints API
-                                |
-                                v
-                            Rails App
+```plantuml!
+cloud "Internet" as internet
+rectangle "AWS L7 Load Balancer" as alb
+rectangle "K8S Ingress Controller" as ingress
+rectangle "K8S Endpoints API" as endpoints
+rectangle "Rails App" as rails
+
+internet -> alb
+alb -> ingress
+ingress -> endpoints
+endpoints -> rails
 ```
 
 At some point in the above chain the `X-Forwarded-Port` was being dropped. Since the expected port should have been `443`
