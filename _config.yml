@@ -7,6 +7,7 @@ plugins:
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-spaceship
+  - jekyll-gfm-admonitions
 
 jekyll-archives:
   enabled:

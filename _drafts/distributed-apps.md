@@ -42,7 +42,24 @@ Ultimately the selection will be dependant on your stack, as they all offer simi
 
 ## Data Definition
 
-Avro provides two ways to define schemas, either through JSON, or it's IDL. JSON is more portable, as the IDL is 
+Avro schemas are defined using JSON, making them human-readable and easy to version control. A schema defines the structure of your data, including field names, types, and whether fields are required or optional. Here's a simple example:
+
+```json
+{
+  "type": "record",
+  "name": "UserCreated",
+  "namespace": "com.example.events",
+  "fields": [
+    {"name": "userId", "type": "string"},
+    {"name": "email", "type": "string"},
+    {"name": "createdAt", "type": "long"},
+    {"name": "metadata", "type": ["null", "string"], "default": null}
+  ]
+}
+```
+
+This schema defines a `UserCreated` event with required `userId`, `email`, and `createdAt` fields, plus an optional `metadata` field. The schema acts as a contract between producers and consumers, ensuring everyone agrees on the data structure.
+
 
 
 
