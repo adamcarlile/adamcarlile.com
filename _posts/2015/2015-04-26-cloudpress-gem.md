@@ -17,7 +17,7 @@ I didn't want to create a drop in blog, I wanted to provide the tools for develo
 
 What follows is a short look at how to plug [Cloudpress](https://github.com/adamcarlile/cloudpress) into a bog standard rails app.
 
-##Installation
+## Installation
 
 Follow the instructions available in the [Cloudpress readme](https://github.com/adamcarlile/cloudpress/blob/master/README.md)
 
@@ -31,7 +31,7 @@ end
 
 Remember to include the cloudpress stylesheet in your `application.css`, it just provides some default pygments code highlighting styles
 
-```
+```css
 /* ...
 *= require_self
 *= require_tree .
@@ -39,7 +39,7 @@ Remember to include the cloudpress stylesheet in your `application.css`, it just
 */
 ```
 
-###Post views
+### Post views
 
 Cloudpress ships with a bunch of renderers that enable you to render chunks of the application in lots of different places.
 
@@ -84,41 +84,44 @@ Cloudpress contains many of these files, all in sensible locations, if you need 
 
 For completeness I've included the list of templates that Cloudpress uses.
 
-```
-- views/cloudpress/archives
-	- _archive.html.slim
-	- _archives.html.slim
-	- _month.html.slim
-	- show.html.slim
-- views/cloudpress/flashes
-	- _flash.html.slim
-- views/cloudpress/posts
-	- _intro.html.slim
-	- _posts.html.slim
-	- index.html.slim
-	- show.html.slim
-- views/cloudpress.tags
-	- _tag.html.slim
-	- _tags.html.slim
-	- show.html.slim
+```text
+views/cloudpress/
+├── archives/
+│   ├── _archive.html.slim
+│   ├── _archives.html.slim
+│   ├── _month.html.slim
+│   └── show.html.slim
+├── flashes/
+│   └── _flash.html.slim
+├── posts/
+│   ├── _intro.html.slim
+│   ├── _posts.html.slim
+│   ├── index.html.slim
+│   └── show.html.slim
+└── tags/
+  ├── _tag.html.slim
+  ├── _tags.html.slim
+  └── show.html.slim
 ```
 
 #### List of renderers
 
 The way to invoke these templates with the associated rendering logic is to use the built in renderers
 
-- `render_cloudpress_posts(posts, options={})`
-- `render_cloudpress_post(post, options={}, &block)`
-- `render_clouspress_tags(tags)`
-- `render_cloudpress_archives(archives)`
-- `render_flashes`
-- `render_flash(type, options={}, &block)`
+```ruby
+render_cloudpress_posts(posts, options={})
+render_cloudpress_post(post, options={}, &block)
+render_clouspress_tags(tags)
+render_cloudpress_archives(archives)
+render_flashes
+render_flash(type, options={}, &block)
+```
 
 The post renderer can take a block that allows you to append content to the post article without having to redefine the partial.
 
 The flash renderer also takes a block that allows you to render custom messages in the style of a flash.
 
-##Future
+## Future
 
 As of this post Cloudpress is available on Rubygems, and is at version 0.1.6. On the roadmap in the next couple of months is to finish writing tests for the dropbox consumption side, along with making it easier to attach plugins to the core. I hope you find it useful, and I'm always open to suggestions and pull requests.
 

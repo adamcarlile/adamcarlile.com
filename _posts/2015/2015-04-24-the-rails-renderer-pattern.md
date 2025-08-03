@@ -46,17 +46,19 @@ So how do we accomplish all this?
 
 The renderer is made up of two parts, with an optional third piece.
 
-    Rails
-    |-App
-    | |-Renderers
-    | | |-panel_renderer.rb
-    | |-Helpers
-    | | |-renderer_helper.rb
-    | |-Views
-    | | |-Renderers
-    | | | |-_panel.html.erb*
-    
-    (* optional)
+```text
+  Rails
+  |-App
+  | |-Renderers
+  | | |-panel_renderer.rb
+  | |-Helpers
+  | | |-renderer_helper.rb
+  | |-Views
+  | | |-Renderers
+  | | | |-_panel.html.erb*
+```
+
+(* optional)
 
 #### Panel Renderer
 
