@@ -8,7 +8,7 @@ tags:
 - Automotive
 layout: blog/post
 ---
-We love going on road trips, however the kids in the back don't always feel the same way. Traveling anywhere over a couple of hours becomes tricky as there's only so much colouring they want to do! They've also become very accustom to steaming services.
+We love going on road trips, however the kids in the back don't always feel the same way. Traveling anywhere over a couple of hours becomes tricky as there's only so much colouring they want to do! They, like all of us, are used to watching things on demand.
 
 While streaming services work great at home, they're not always reliable on the road. Poor mobile coverage, data caps, and battery drain can turn a peaceful trip into a litany of "Are we there yet?" complaints. I decided to build a custom in-car media server that would work reliably, offline, and keep the whole family happy.
 
