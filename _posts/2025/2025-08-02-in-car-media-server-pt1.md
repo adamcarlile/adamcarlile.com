@@ -12,6 +12,9 @@ We love going on road trips, however the kids in the back don't always feel the 
 
 While streaming services work great at home, they're not always reliable on the road. Poor mobile coverage, data caps, and battery drain can turn a peaceful trip into a litany of "Are we there yet?" complaints. I decided to build a custom in-car media server that would work reliably, offline, and keep the whole family happy.
 
+> [!TIP]
+> TL;DR; I chose a MiniPC with an external hard drive. The [shopping list](#shopping-list) is at the end of this article
+
 ## Streaming Isn't Always the Answer
 
 These days, we've become so used to having vast media libraries available at our fingertips, gone are the days of watching whatever was broadcast, or hunting for that specific VHS tape (that inevitably someone put back in the wrong box). The minute we pull out of the driveway, and away from the safety of our home network, reality sets in.
@@ -77,7 +80,16 @@ Instead we can use a Buck-boost converter, to boost the voltage from 12V up to 1
 
 However since this is tied to the 12V from the car, when the ignition is in the off position the PC will lose power, this is fine for a first iteration and for testing, but we will probably have to introduce an uninterruptible power supply of some type, as I don't want to have to have the ignition on, and run the car battery down just to run the media server.
 
-## Conclusion
+## Next Steps
 
 We now have the hardware we need to start working on the software side of the implementation. which we'll be diving into in the next part of this set, setting up the operating system, configuring the media server software, and getting everything talking together. We'll also dive into the networking configuration to handle both WiFi and mobile connectivity.
 
+## Shopping List
+
+- [GEEKOM MiniAir 11, N5105](https://amzn.eu/d/iuDEUzx)
+- [Crucial 2TB USB 3.2 (CT2000X8SSD9)](https://uk.crucial.com/ssd/x8/ct2000x8ssd9)
+- [Huawei E3372-325 4G Dongle](https://amzn.eu/d/9zCsUwV)
+- [KFD 118W 100W Car Charger 12V-24V DC](https://amzn.eu/d/8fH3JOb)
+
+> [!NOTE]
+> Or equivalent, originally I put this together in 2023, and things have moved on. However I still believe that a MiniPC offers more performance per watt then a RaspberryPi 4/5
