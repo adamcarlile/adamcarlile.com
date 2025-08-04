@@ -15,7 +15,11 @@
     max-width: 100%;
     height: auto;
   }
-  
+
+  .active {
+    @apply border-b-4 border-white;
+  }
+
   /* Class for large images that should break out */
   .prose img.breakout {
     @apply w-[calc(100%+200px)] max-w-[calc(100vw-2rem)];

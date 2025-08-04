@@ -35,7 +35,7 @@ For this project, I needed hardware that met three key criteria:
 
 As a bonus, hardware video transcoding support would be ideal.
 
-### Intel N5105 based MiniPC 
+### Intel N5105 based MiniPC
 
 This platform fulfils the entire list of requirements, It's small, cheep, uses a few watts of power, and ticks the bonus box, by supporting [Intel QuickSync](https://www.intel.com/content/www/us/en/developer/tools/vpl/overview.html#gs.1cjon7), which provides hardware transcoding.
 
@@ -55,11 +55,11 @@ I opted for a [GEEKOM MiniAir 11, N5105](https://amzn.eu/d/iuDEUzx)
 
 ### Alternative Considerations
 
-While the Raspberry Pi 4 was initially considered, and is an excellent single-board computer. However it doesn't support hardware video transcoding, meaning all media processing would have to rely on software CPU transcoding, resulting in poor performance. 
+While the Raspberry Pi 4 was initially considered, and is an excellent single-board computer. However it doesn't support hardware video transcoding, meaning all media processing would have to rely on software CPU transcoding, resulting in poor performance.
 
 ## Storage
 
-The built-in 256GB drive provides the operating system and application storage, but isn't sufficient for a meaningful media library. 
+The built-in 256GB drive provides the operating system and application storage, but isn't sufficient for a meaningful media library.
 
 I added a [Crucial 2TB USB 3.2 (CT2000X8SSD9)](https://uk.crucial.com/ssd/x8/ct2000x8ssd9) external drive to store the actual media files. The external drive can be easily swapped or upgraded as the demand grows, and USB 3.2 Gen-2 provides sufficient bandwidth for multiple concurrent video streams without bottlenecks. Originally my plan was to disconnect the drive, and plug it into my NAS and run a synchronization task, making an external drive ideal.
 
