@@ -10,7 +10,7 @@ layout: blog/post
 ---
 We love going on road trips, however the kids in the back don't always feel the same way. Traveling anywhere over a couple of hours becomes tricky as there's only so much colouring they want to do! They, like all of us, are used to watching things on demand.
 
-While streaming services work great at home, they're not always reliable on the road. Poor mobile coverage, data caps, and battery drain can turn a peaceful trip into a litany of "Are we there yet?" complaints. I decided to build a custom in-car media server that would work reliably, offline, and keep the whole family happy.
+While streaming services work great at home, they're not always reliable on the road. Poor mobile coverage, data caps, and battery drain can turn a peaceful trip into a litany of "Are we there yet?" complaints. I decided to build a custom in-car media server that would work reliably, offline, and keep the whole family happy. As there's only so many times I can attempt to explain buffering and packet loss to a four-year old!
 
 > [!TIP]
 > TL;DR; I chose a MiniPC with an external hard drive. The [shopping list](#shopping-list) is at the end of this article
@@ -19,7 +19,7 @@ While streaming services work great at home, they're not always reliable on the 
 
 These days, we've become so used to having vast media libraries available at our fingertips, gone are the days of watching whatever was broadcast, or hunting for that specific VHS tape (that inevitably someone put back in the wrong box). The minute we pull out of the driveway, and away from the safety of our home network, reality sets in.
 
-- **Inconsistent connectivity**: Mobile phone networks in the UK can be pretty spotty, and more so the more rural you go. With radically different data rates between them.
+- **Inconsistent connectivity**: Mobile phone networks in the UK can be pretty spotty, and more so the more rural you go. With radically different data rates between them. 
 - **Data costs**: Streaming HD video for hours can quickly burn through your monthly data allowance
 - **Content availability**: Not all shows are available for offline download, and ensuring that you've downloaded the correct show before a road trip is laborious and slow.
 
