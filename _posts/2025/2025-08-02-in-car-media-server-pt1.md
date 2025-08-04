@@ -61,7 +61,7 @@ While the Raspberry Pi 4 was initially considered, and is an excellent single-bo
 
 The built-in 256GB drive provides the operating system and application storage, but isn't sufficient for a meaningful media library.
 
-I added a [Crucial 2TB USB 3.2 (CT2000X8SSD9)](https://uk.crucial.com/ssd/x8/ct2000x8ssd9) external drive to store the actual media files. The external drive can be easily swapped or upgraded as the demand grows, and USB 3.2 Gen-2 provides sufficient bandwidth for multiple concurrent video streams without bottlenecks. Originally my plan was to disconnect the drive, and plug it into my NAS and run a synchronization task, making an external drive ideal.
+I added a [Crucial 2TB USB 3.2 (CT2000X8SSD9)](https://uk.crucial.com/ssd/x8/ct2000x8ssd9) external drive to store the actual media files. The external drive can be easily swapped or upgraded as the demand grows, and USB 3.2 Gen-2 provides sufficient bandwidth for multiple concurrent video streams without bottlenecks. Originally my plan was to disconnect the drive, and plug it into my NAS and run a synchronization task, making an external drive ideal. It's affixed to the top of the MiniPC with a command strip, just to keep the whole package together.
 
 > [!NOTE]
 > This drive is now end of life, and crucial now offer the [CT2000X9SSD9](https://uk.crucial.com/ssd/x9/ct2000x9ssd9) as a replacement
