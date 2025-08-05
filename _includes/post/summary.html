@@ -1,6 +1,6 @@
 <article class="flex flex-col items-start justify-between">
   <div class="flex items-center gap-x-4 text-xs">
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="text-gray-500">{{ include.post.date | date: "%b %d, %Y" }}</time>
+    <time datetime="{{ include.post.date | date_to_xmlschema }}" class="text-gray-500">{{ include.post.date | date: "%b %d, %Y" }}</time>
     {% if include.post.category %}
     <a href="#" class="relative z-10 rounded-full bg-gray-50 px-2 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ include.post.category }}</a>
     {% endif %}

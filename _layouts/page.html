@@ -1,13 +1,13 @@
-{% include layouts/head.html %}
-
-{% include page-header.html title="Blog Posts" image="/assets/images/header/m-106.jpg" subtitle="Thoughts on software engineering, architecture, and leadership." %}
+---
+layout: default
+---
+{% include page-header.html image="/assets/images/header/m-106.jpg" %}
 <div class="bg-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl">
       {% include breadcrumbs.html %}
+      {% include title.html title=page.title subtitle=page.subtitle %}
       {{ content }}
     </div>
   </div>
 </div>
-
-{% include layouts/foot.html %}

@@ -20,7 +20,7 @@
 		{
 			"label": "Install Dependencies",
 			"type": "shell",
-			"command": "mise exec -- bundle install",
+			"command": "mise exec -- bundle install && mise exec -- npm install",
 			"group": "build",
 			"isBackground": false,
 			"problemMatcher": []
