@@ -1,32 +1,23 @@
 ---
 layout: page
 ---
-{% include page-header.html title="Blog Posts" image="/assets/images/header/m-106.jpg" subtitle="Thoughts on software engineering, architecture, and leadership." %}
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl">
-      {% include breadcrumbs.html %}
-      {% assign page_date = page.date | date: "%Y" %}
-      {% assign page_title = page.title | default: page_date %}
-      {% assign posts = page.posts | default: site.posts %}
-      {% include title.html title=page_title subtitle=page.subtitle %}
-      {{ content }}
-      {% if posts.size > 0 %}
-      <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-        {% for post in posts %}
-          {% include post/summary.html post=post %}
-        {% endfor %}
-      </div>
-      {% else %}
-      <!-- Empty state when no posts exist -->
-      <div class="mt-16 text-center">
-        <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        <h3 class="mt-2 text-sm font-semibold text-gray-900">No blog posts yet</h3>
-        <p class="mt-1 text-sm text-gray-500">Get started by creating your first blog post in the _posts directory.</p>
-      </div>
-      {% endif %}
-    </div>
-  </div>
+{% assign page_date = page.date | date: "%Y" %}
+{% assign page_title = page.title | default: page_date %}
+{% assign posts = page.posts | default: site.posts %}
+{{ content }}
+{% if posts.size > 0 %}
+<div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+  {% for post in posts %}
+    {% include post/summary.html post=post %}
+  {% endfor %}
 </div>
+{% else %}
+<!-- Empty state when no posts exist -->
+<div class="mt-16 text-center">
+  <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+  </svg>
+  <h3 class="mt-2 text-sm font-semibold text-gray-900">No blog posts yet</h3>
+  <p class="mt-1 text-sm text-gray-500">Get started by creating your first blog post in the _posts directory.</p>
+</div>
+{% endif %}
