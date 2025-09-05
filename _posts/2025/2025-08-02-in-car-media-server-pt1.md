@@ -1,11 +1,12 @@
 ---
 title: "In-Car Media Server Pt.1"
-subtitle: "Selecting the hardware"
+subtitle: "Software Selection & Installation"
 category: Architecture
 tags:
 - Family
 - Media
 - Automotive
+- Projects
 layout: blog/post
 ---
 We love going on road trips, however the kids in the back don't always feel the same way. Traveling anywhere over a couple of hours becomes tricky as there's only so much colouring they want to do! They, like all of us, are used to watching things on demand.

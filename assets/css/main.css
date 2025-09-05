@@ -35,6 +35,15 @@
   .prose a:hover {
     @apply decoration-indigo-600;
   }
+
+  @media print {
+    footer {
+      @apply hidden;
+    }
+    #page-header {
+      @apply hidden;
+    }
+  }
   
   /* Responsive breakpoints for breakout images */
   @media (max-width: 768px) {
