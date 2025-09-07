@@ -33,7 +33,7 @@ When I'm not coding, you'll find me exploring new technologies, contributing to 
 - Designed and delivered a platform migration to a more modern cloud native implementation, running on Kubernetes, leveraging service oriented architecture, employing the strangler pattern to remove the dependency on the legacy system.
 
 ### Farmdrop
-#### _2018-2019_ Lead Technical Architect
+#### _2018-2019_ - Lead Technical Architect
 - Designed an offline shopping layer using CouchDB as the sync mechanism
 - Introduced Kafka and Avro to allow us to stream data between sales and warehousing
 - Designed a wholly digital warehouse for asset tracking and order picking 
