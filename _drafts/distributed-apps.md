@@ -9,7 +9,7 @@ tags:
 - Schema
 layout: blog/post
 ---
-
+                               
 Distributed applications *should* communicate by the passing of messages between their interfaces (if you're reading a shared database, you're doing it wrong, and we should probably have a chat!). These messages, must conform to a schema, in order for the receiving system to understand the intent of message.
 
 In a web facing application these schemas where usually encoded as part of the API specification, with validation rules in place to prevent the acceptance of malformed, or otherwise incorrect data. With the client being told, as part of the request whether or not the service will accept it.
